@@ -1,3 +1,16 @@
+const scrollUp = document.querySelector("#scroll-up");
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+const domContainer = document.querySelector('#scroll-up');
+const root = ReactDOM.createRoot(domContainer);
+root.render(e(scrollUp));
+
 const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
@@ -13,7 +26,3 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
-
-const burgerMenu = document.querySelector('#burger');
-const root = ReactDOM.createRoot(burgerMenu);
-root.render(burgerMenu);
