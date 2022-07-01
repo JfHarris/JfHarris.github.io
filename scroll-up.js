@@ -6,3 +6,7 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const domContainer = document.querySelector('#scroll-up');
+const root = ReactDOM.createRoot(domContainer);
+root.render(e(scrollUp));
