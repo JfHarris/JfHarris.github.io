@@ -1,28 +1,13 @@
-const scrollUp = document.querySelector("#scroll-up");
-scrollUp.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
+(function () {
+  [...document.querySelectorAll(".control")].forEach(button => {
+      button.addEventListener("click", function() {
+          document.querySelector(".active-btn").classList.remove("active-btn");
+          this.classList.add("active-btn");
+          document.querySelector(".active").classList.remove("active");
+          document.getElementById(button.dataset.id).classList.add("active");
+      })
   });
-});
-
-const domContainer = document.querySelector('#scroll-up');
-const root = ReactDOM.createRoot(domContainer);
-root.render(e(scrollUp));
-
-const burger = document.querySelector("#burger-menu");
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
-
-burger.addEventListener("click", () => {
-  ul.classList.toggle("show");
-});
-
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
+  document.querySelector(".theme-btn").addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+})
+})();
