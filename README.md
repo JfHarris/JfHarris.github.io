@@ -1,6 +1,6 @@
 Tasks
 
-0. Get a Domain Name -- JfHarris.github.io
+0. Get a Domain Name --- JfHarris.github.io
 1. Add an About Me section
 2. Add a Portfolio Section
 3. Add Your Resume
