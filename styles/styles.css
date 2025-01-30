@@ -849,6 +849,16 @@ section {
 
 /* **** Responsive Queries **** */
 
+@media screen and (max-width: 320px) {
+    .presentation {
+        height: 20rem;
+    }
+    .presentation iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     header {
         padding: 0 !important;
