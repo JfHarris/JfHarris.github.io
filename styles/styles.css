@@ -748,6 +748,7 @@ section {
 .presentation {
     margin-top: 5rem;
     /* **** */
+    height: 0;
     position: relative;
     width: 100%;
     padding-top: 60%;
