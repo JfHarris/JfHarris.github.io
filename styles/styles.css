@@ -745,8 +745,30 @@ section {
 
 /* Data Analytics */
 
-.presentation {
+.presentation-container {
     margin-top: 5rem;
+}
+
+.presentation-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation-content h3 {
+    margin-bottom: 2rem;
+}
+
+.presentation-content p {
+    margin-bottom: 1rem;
+}
+
+.presentation-content a {
+    color: var(--color-secondary);
+}
+
+.presentation {
     /* **** */
     height: 0;
     position: relative;
